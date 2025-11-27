@@ -5,185 +5,327 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sangram Food & Products Co.</title>
   <link rel="stylesheet" href="styles.css" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
 </head>
 <body>
-  <!-- Navbar -->
+
+  <!-- NAVBAR -->
   <header class="navbar">
-    <div class="container nav-content">
-      <div class="logo">
-        <span class="logo-main">SANGRAM</span>
-        <span class="logo-sub">Food &amp; Products Co.</span>
-      </div>
-      <nav>
+    <div class="container nav-container">
+      <a href="#home" class="brand">
+        <img src="images/sangram-logo.jpg" class="brand-logo" alt="Sangram Logo" />
+        <div class="brand-text">
+          <h1>SANGRAM</h1>
+          <span>FOOD &amp; PRODUCTS CO.</span>
+        </div>
+      </a>
+
+      <nav class="nav-links">
         <a href="#home">Home</a>
         <a href="#about">About</a>
+        <a href="#why">Why Sangram</a>
         <a href="#products">Products</a>
-        <a href="#why-us">Why Us</a>
+        <a href="#services">Services</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
-  <!-- Hero -->
+  <!-- HERO -->
   <section id="home" class="hero">
+    <div class="hero-gradient layer-1"></div>
+    <div class="hero-gradient layer-2"></div>
+
     <div class="container hero-content">
-      <div>
-        <h1>Crispy Taste, Trusted Quality.</h1>
-        <p>
-          Sangram Food &amp; Products Co. is a Visnagar-based namkeen and farsan
-          manufacturer &amp; distributor delivering fresh, flavourful snacks to
-          retailers, caterers and families.
+      <div class="hero-text animate">
+        <p className="tagline-guj">સાચો સ્વાદ. સાચો ગુજરાતી નમકીન.</p>
+        <h2>Crispy Taste. Homely Feel.<br />Truly Gujarati.</h2>
+        <p class="hero-sub">
+          Fresh, hygienic and authentic Gujarati namkeen prepared with care in
+          Visnagar, Mehsana. A trusted family-run brand serving retailers,
+          caterers and households.
         </p>
-        <a href="#contact" class="btn-primary">Enquiry for Bulk Orders</a>
+        <div class="hero-actions">
+          <a href="#products" class="btn-primary">Explore Products</a>
+          <a href="#contact" class="btn-outline">Bulk / Dealer Enquiry</a>
+        </div>
       </div>
-      <div class="hero-box">
-        <h3>Key Highlights</h3>
-        <ul>
-          <li>Trader – Wholesaler / Distributor &amp; Retail Business</li>
-          <li>Proprietorship led by <strong>Raju T. Patel</strong></li>
-          <li>GST No.: <strong>24AXCPP7057P1ZV</strong></li>
-          <li>Supplying across Visnagar &amp; nearby regions</li>
-        </ul>
+
+      <div class="hero-side animate delay-1">
+        <div class="hero-badge">Since 2018</div>
+        <div class="hero-pill">Family-run • Proprietorship</div>
+        <div class="hero-pill">Manufacturing • Wholesale • Retail</div>
+        <div class="hero-pill">GST: 24AXCPP7057P1ZV</div>
       </div>
     </div>
   </section>
 
-  <!-- About -->
+  <!-- BRAND STRIP -->
+  <section class="strip">
+    <div class="container strip-grid animate">
+      <div class="strip-item">
+        <span class="strip-title">Manufacturing</span>
+        <span class="strip-text">Authentic recipes with disciplined processes</span>
+      </div>
+      <div class="strip-item">
+        <span class="strip-title">Wholesale &amp; Distribution</span>
+        <span class="strip-text">Steady supply for shops &amp; caterers</span>
+      </div>
+      <div class="strip-item">
+        <span class="strip-title">Retail Outlet</span>
+        <span class="strip-text">Walk-in customers at Visnagar</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
   <section id="about" class="section">
-    <div class="container two-column">
-      <div>
-        <h2>About Sangram Food &amp; Products Co.</h2>
+    <div class="container two-col">
+      <div class="animate">
+        <h2 class="section-title">About Us</h2>
         <p>
-          Sangram Food &amp; Products Co. is engaged in the production and
-          distribution of premium quality namkeen and farsan. As a local,
-          family-managed proprietorship, we focus on authentic taste, hygienic
-          preparation and consistent supply to our trade partners.
+          Sangram Food Products Co. is a family-managed namkeen and farsan
+          manufacturing firm based in Visnagar, Mehsana (Gujarat). For us,
+          namkeen is not just a snack – it is a part of our home, our culture
+          and our Gujarati identity.
         </p>
         <p>
-          We serve wholesalers, retailers, caterers, canteens and walk-in
-          customers through our retail presence in Visnagar.
+          Led by proprietor <strong>Mr. Rajendrakumar Tribhovandas Patel (Raju T. Patel)</strong>,
+          Sangram began as a small local unit with a simple idea: serve fresh,
+          honest and flavourful namkeen to our own community first – and then
+          to anyone who loves real Gujarati taste.
+        </p>
+        <p>
+          Over time, that small set-up has grown into a dedicated manufacturing,
+          wholesale, distribution and retail operation. But our core remains the
+          same: authentic recipes, hygienic preparation and long-term
+          relationships.
         </p>
       </div>
-      <div class="about-box">
+
+      <div class="about-box animate delay-1">
         <h3>Business Profile</h3>
         <ul>
-          <li><strong>Nature of Business:</strong> Trader – Wholesaler / Distributor</li>
-          <li><strong>Additional Business:</strong> Retail Business</li>
-          <li><strong>Legal Status:</strong> Proprietorship</li>
-          <li><strong>CEO:</strong> Raju T. Patel</li>
-          <li><strong>GST Partner:</strong> Rajendrakumar Tribhovandas Patel</li>
+          <li><strong>Proprietor:</strong> Rajendrakumar Tribhovandas Patel (Raju T. Patel)</li>
+          <li><strong>Nature of Business:</strong> Namkeen Manufacturing &amp; Trading</li>
+          <li><strong>Additional:</strong> Wholesale, Distribution &amp; Retail Outlet</li>
+          <li><strong>Location:</strong> Visnagar, Mehsana (Gujarat)</li>
         </ul>
       </div>
     </div>
   </section>
 
-  <!-- Products -->
-  <section id="products" class="section section-alt">
+  <!-- WHY SANGRAM -->
+  <section id="why" class="section grey">
     <div class="container">
-      <h2>Our Product Range</h2>
-      <p class="section-intro">
-        We manufacture and supply a wide variety of traditional and innovative
-        snacks suitable for daily consumption as well as special occasions.
+      <h2 class="section-title center">Why Choose Sangram?</h2>
+      <p class="section-intro center">
+        For us, business is built on trust. Many of our buyers have been with us
+        for years – some from the very beginning.
       </p>
 
-      <div class="cards">
-        <div class="card">
+      <div class="why-grid">
+        <div class="why-card animate">
+          <div class="why-icon">👨‍👩‍👧‍👦</div>
+          <h3>Family-Run &amp; Personally Managed</h3>
+          <p>Every batch is prepared under direct supervision of the proprietor and core team.</p>
+        </div>
+        <div class="why-card animate delay-1">
+          <div class="why-icon">🍲</div>
+          <h3>Authentic Gujarati Taste</h3>
+          <p>Time-tested home-style recipes adapted to consistent production.</p>
+        </div>
+        <div class="why-card animate delay-2">
+          <div class="why-icon">🧼</div>
+          <h3>Hygiene You Can Trust</h3>
+          <p>Clean handling, safe frying/roasting and neat, tamper-safe packing.</p>
+        </div>
+        <div class="why-card animate delay-3">
+          <div class="why-icon">🌾</div>
+          <h3>Freshness as a Habit</h3>
+          <p>Smaller, frequent batches instead of old stock – that “fresh from kadai” feel.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section id="products" class="section">
+    <div class="container">
+      <h2 class="section-title center">Our Products</h2>
+      <p class="section-intro center">
+        A wide range of farsan, mixtures, roasted snacks and special seasonal
+        items – ready for tea-time, tiffins and celebrations.
+      </p>
+
+      <div class="product-grid">
+        <div class="product-card animate">
+          <div class="product-img placeholder">Farsan Packet Image</div>
           <h3>Classic Gujarati Farsan</h3>
-          <ul>
-            <li>Sev &amp; Laung Sev</li>
-            <li>Gathiya &amp; Tikha Gathiya</li>
-            <li>Bhujia &amp; Aloo Bhujia</li>
-            <li>Fafda, Papdi, Ganthia (as applicable)</li>
-          </ul>
+          <p>Fafda, Gathiya, Bhajiya mix, Dhokla mix, Patra, Kachori &amp; more.</p>
         </div>
-        <div class="card">
+        <div class="product-card animate delay-1">
+          <div class="product-img placeholder">Sev &amp; Bhujia Packet</div>
+          <h3>Sev &amp; Bhujia Range</h3>
+          <p>Plain, Laung, Ratlami, Nylon, Tomato, Bhavnagri sev, Aloo &amp; masala bhujia.</p>
+        </div>
+        <div class="product-card animate delay-2">
+          <div class="product-img placeholder">Mixture / Chivda</div>
           <h3>Mixtures &amp; Chivda</h3>
-          <ul>
-            <li>Namkeen Mixture (Regular / Spicy)</li>
-            <li>Chivda (Poha, Corn &amp; other variants)</li>
-            <li>Diet Mixture &amp; Roasted Mix</li>
-          </ul>
+          <p>Navratna, Gujarati, Poha &amp; Cornflakes chivda, murmura mix, diet mixture.</p>
         </div>
-        <div class="card">
-          <h3>Roasted &amp; Tea-Time Snacks</h3>
-          <ul>
-            <li>Roasted Namkeen (low oil options)</li>
-            <li>Peanuts, Chana, Masala Dal</li>
-            <li>Everyday tea-time savouries</li>
-          </ul>
+        <div class="product-card animate delay-3">
+          <div class="product-img placeholder">Roasted Snacks</div>
+          <h3>Roasted Snacks</h3>
+          <p>Roasted chana, masala peanuts, moong dal, chana dal, flavoured khakhra.</p>
         </div>
-        <div class="card">
-          <h3>Festival &amp; Catering Packs</h3>
-          <ul>
-            <li>Bulk packs for weddings &amp; functions</li>
-            <li>Customised packaging for gifting</li>
-            <li>Special assortments for Diwali &amp; festivals</li>
-          </ul>
+        <div class="product-card animate delay-4">
+          <div class="product-img placeholder">Tea-Time Snacks</div>
+          <h3>Fried Tea-Time Snacks</h3>
+          <p>Potato wafers, banana chips, chakri, mathri, shakkarpara &amp; more.</p>
+        </div>
+        <div class="product-card animate delay-5">
+          <div class="product-img placeholder">Kids Range</div>
+          <h3>Kids &amp; Anytime Munching</h3>
+          <p>Mini bhakarwadi, ring snacks, nibble mixes, travel-friendly packs.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Why Us -->
-  <section id="why-us" class="section">
-    <div class="container two-column">
-      <div>
-        <h2>Why Choose Sangram?</h2>
-        <ul class="bullets">
-          <li><strong>Consistent taste and quality</strong> across every batch.</li>
-          <li><strong>Hygienic preparation</strong> with focus on food safety.</li>
-          <li><strong>On-time supply</strong> for retailers and caterers.</li>
-          <li><strong>Flexible packing sizes</strong> – retail pouches &amp; bulk packs.</li>
-          <li><strong>Competitive pricing</strong> for wholesalers and distributors.</li>
-        </ul>
-      </div>
-      <div class="highlight-box">
-        <h3>Ideal For</h3>
-        <ul>
-          <li>Retail kirana &amp; supermarket outlets</li>
-          <li>Wholesalers &amp; distributors</li>
-          <li>Caterers &amp; event organisers</li>
-          <li>Corporate canteens &amp; mess</li>
-        </ul>
+  <!-- SERVICES / WHO WE SERVE -->
+  <section id="services" class="section grey">
+    <div class="container">
+      <h2 class="section-title center">Services &amp; Who We Serve</h2>
+      <p class="section-intro center">
+        We customise taste, pack size and supply patterns based on partner
+        requirements.
+      </p>
+
+      <div class="service-grid">
+        <div class="service-card animate">
+          <h3>Wholesale &amp; Dealers</h3>
+          <p>Regular &amp; bulk cartons with consistent quality and timely dispatch.</p>
+        </div>
+        <div class="service-card animate delay-1">
+          <h3>Retail &amp; Supermarkets</h3>
+          <p>Pack sizes and flavours suitable for kirana stores and modern trade.</p>
+        </div>
+        <div class="service-card animate delay-2">
+          <h3>Caterers &amp; Party Plots</h3>
+          <p>Custom namkeen &amp; farsan combinations for weddings and events.</p>
+        </div>
+        <div class="service-card animate delay-3">
+          <h3>Canteens &amp; Institutions</h3>
+          <p>Economy packs for canteens, hostels and institutional catering.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Contact -->
-  <section id="contact" class="section section-alt">
-    <div class="container two-column">
-      <div>
-        <h2>Contact &amp; Enquiry</h2>
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container contact-grid">
+      <div class="animate">
+        <h2 class="section-title">Contact &amp; Enquiry</h2>
         <p>
-          For dealership, bulk orders or product enquiries, please get in touch
-          with us.
+          For dealership, distribution or bulk orders, reach out using the
+          details below or send us a quick enquiry.
         </p>
         <ul class="contact-list">
           <li><strong>Firm:</strong> Sangram Food &amp; Products Co.</li>
-          <li><strong>Location:</strong> Visnagar, Gujarat – 384315, India</li>
-          <li><strong>Business:</strong> Namkeen &amp; Farsan Manufacturing &amp; Trading</li>
-          <!-- You can later add exact address, phone, WhatsApp, email -->
+          <li><strong>Location:</strong> Visnagar, Mehsana, Gujarat – 384315</li>
+          <li><strong>Business:</strong> Namkeen &amp; Farsan Manufacturing, Wholesale &amp; Retail</li>
+          <!-- Fill when you have real details -->
+          <!-- <li><strong>Phone / WhatsApp:</strong> +91-9XXXXXXXXX</li> -->
+          <!-- <li><strong>Email:</strong> info@sangramnamkeen.com</li> -->
         </ul>
+
+        <div class="map-wrapper">
+          <h3>Find Us on Map</h3>
+          <iframe
+            src="https://www.google.com/maps?q=Visnagar,+Gujarat,+India&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
       </div>
-      <div>
-        <form class="contact-form">
-          <h3>Send Enquiry</h3>
-          <input type="text" placeholder="Your Name" required />
-          <input type="tel" placeholder="Mobile Number" required />
-          <input type="email" placeholder="Email (optional)" />
-          <textarea rows="4" placeholder="Your requirements"></textarea>
-          <button type="submit" class="btn-primary">Submit</button>
-        </form>
-      </div>
+
+      <form
+        class="contact-form animate delay-1"
+        onsubmit="event.preventDefault(); alert('Demo form only. Connect to email/service to receive enquiries.');"
+      >
+        <h3>Send Enquiry</h3>
+        <input type="text" placeholder="Your Name" required />
+        <input type="tel" placeholder="Mobile Number" required />
+        <input type="email" placeholder="Email (optional)" />
+        <textarea rows="4" placeholder="Requirements (products, quantity, city, occasion)"></textarea>
+        <button class="btn-primary full">Submit</button>
+        <p class="form-note">
+          Actual submission can be enabled later via email or backend service.
+        </p>
+      </form>
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- FOOTER -->
   <footer class="footer">
-    <div class="container footer-content">
-      <p>&copy; <!--YEAR--> Sangram Food &amp; Products Co. All rights reserved.</p>
-      <p>GST No.: 24AXCPP7057P1ZV</p>
+    <div class="container footer-grid">
+      <div>
+        <h4>Sangram Food &amp; Products Co.</h4>
+        <p>Namkeen &amp; farsan manufacturing unit based in Visnagar, Mehsana.</p>
+      </div>
+      <div class="footer-links">
+        <h5>Quick Links</h5>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div>
+        <h5>Statutory</h5>
+        <p>GST: 24AXCPP7057P1ZV</p>
+        <p>Proprietorship • Since 2018</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © <span id="year"></span> Sangram Food &amp; Products Co. All rights reserved.
     </div>
   </footer>
+
+  <!-- WHATSAPP FLOAT (update number later) -->
+  <a
+    href="https://wa.me/919000000000"
+    class="whatsapp-float"
+    target="_blank"
+    rel="noopener"
+  >
+    💬 Order on WhatsApp
+  </a>
+
+  <!-- SIMPLE SCROLL ANIMATIONS -->
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("in-view");
+          }
+        });
+      },
+      { threshold: 0.15 }
+    );
+
+    document.querySelectorAll(".animate").forEach(el => observer.observe(el));
+  </script>
 </body>
 </html>
